@@ -282,7 +282,7 @@ int Match(const vector<KeyPoint3f>& a, const vector<KeyPoint3f>& b,const float* 
     {
         translations[0] += b[i].x - a[i].x + center_keypoint.x;
         translations[1] += b[i].y - a[i].y + center_keypoint.y;
-        translations[2] += b[i].z - a[i].z + center_keypoint.z;
+        translations[2] += b[i].z - a[i].z;
     }
     translations[0] /= max_ab;
     translations[1] /= max_ab;

@@ -23,6 +23,7 @@ int main(int argc, const char * argv[]) {
     vector<KeyPoint3f> s_pts;
     vector<KeyPoint3f> k_pts;
     
+    
     int s_array[kEdgeSize * kEdgeSize];
     int k_array[kEdgeSize * kEdgeSize];
     float rotations[3];
@@ -41,14 +42,12 @@ int main(int argc, const char * argv[]) {
     //rotate
     float roll = ToRadians(0.0f);
     float pitch = ToRadians(0.0f);
-    float yaw = ToRadians(45.0f);
+    float yaw = ToRadians(30.0f);
     rotations[1] = pitch;
     rotations[0] = roll;
     rotations[2] = yaw;
     Rotate(k_array,rotations);
     printTwo(s_array,k_array);
-    
-    
     
     printf("Let's match\n");
     // getting ready for matching algorithm
