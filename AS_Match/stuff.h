@@ -288,7 +288,7 @@ int Match(const vector<KeyPoint3f>& a, const vector<KeyPoint3f>& b,const float* 
     translations[1] /= max_ab;
     translations[2] /= max_ab;
     
-    printf("tx = %.2f and ty = %.2f\n",translations[0],translations[1]);
+    printf("tx = %.2f and ty = %.2f and tz = %.2f\n",translations[0],translations[1],translations[2]);
     
     return 0;
 };
